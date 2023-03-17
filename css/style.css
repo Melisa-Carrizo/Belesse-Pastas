@@ -266,6 +266,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 .container__titulo__naranja h3 {
     background-color: bisque;
     padding: 1rem 6rem;
@@ -319,6 +320,7 @@ footer {
     justify-content: space-evenly;
     padding-top: 4rem;
 }
+
 .container__sucursales__bg iframe {
     background-color: tomato;
     padding: 0.313rem;
