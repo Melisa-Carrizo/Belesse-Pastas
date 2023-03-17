@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto- Belesse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__desktop__logo__div">
+         <img src="../Img/logo_menu.png" alt="Belesse Pastas"class="header__desktop__logo">
+         </div> 
+         <nav class="navbar navbar-expand-lg" id="header__navbar__color" >
+             <div class="container-fluid">
+                 <a class="navbar-brand d-lg-none" href="#">
+                     <img id="logo__navbar" src="../Img/logo_menu.png" alt="Belesse Pastas">
+                 </a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse header__navbar" id="navbarTogglerDemo02">
+                     <ul class="navbar-nav navbar-collapse justify-content-evenly mb-2 mb-lg-0 ">
+                         <li class="nav-item">
+                             <a class="nav-link" href="../index.html">Inicio</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="./productos.html">Productos</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="../index.html#section__index__nosotros">Nosotros</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="./sucursales.html">Sucursales</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="./delivery.html">Delivery</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="./contacto.html">Contacto</a>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+         </nav>
+     </header>
+    <main class="main__container">
+        <h2 class="main__container__h2">Contacto</h2>
+    </main>
+    <section class="section__contactanos">
+        <div>
+            <h3>Contactanos</h3>
+            <h4>Una vez completado y enviado el formulario estarás recibiendo una respuesta a la brevedad vía E-mail</h4>
+        </div>
+
+        <form action="" method="get">
+            <div class="form__div" id="form__div__nombre">
+                <input type="text" class="form__div__input" id="form__input__nombre" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="form__div">
+                <input type="email" class="form__div__input" name="E-mail" id="form__input__email" placeholder="Ingrese su E-mail" required>
+            </div>    
+            <div>
+                <select name="razon__consulta" class="form__div__input" id="form__div__razon__consulta" required>
+                    <option value="1">Seleccione la razón de su consulta</option>
+                    <option value="2">Queja</option>
+                    <option value="3">Novedades</option>
+                    <option value="4">Promociones</option>
+                    <option value="5">Otro</option>
+                    
+                </select>
+            </div>
+            <div class="form__div">
+                <textarea name="" class="form__div__input" id="form__input__consulta" cols="30" rows="5" placeholder="Escriba su consulta aqui..." required></textarea>
+            </div>
+            
+            <div class="form-check form-switch" id="notificacion__check">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Deseo recibir notificaciones y promociones</label>
+              </div>
+        </form>
+        <div class="form__button__enviar__container">
+            <button type="button" class="btn btn-secondary form__button__enviar" value="enviar">Enviar</button>
+        </div>
+    </section>
+
+    <footer>
+        <section class="footer__section__info">
+            <div class="container__contacto">
+                <h4>Contacto</h4>
+                <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"> 
+                    <img src="../Img/icon-gmail.png" alt="gmail">
+                    <p>BelessePastas@gmail.com</p>
+                </a>
+            </div>
+            <div class="container__logo">
+                <img src="../Img/footer__div__logo.png" alt="Belesse Pastas">
+            </div>
+             <div class="container__redes">
+                <h4>Encontranos acá</h4>
+                <div class="containerImgRedes">
+                    <a href="https://www.facebook.com/" target="_blank">
+                    <img src="../Img/icon-facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../Img/icon-instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.whatsapp.com/?lang=es" target="_blank">
+                        <img src="../Img/icon-whatsapp.png" alt="Whatsapp">
+                    </a>
+                </div>
+            </div>
+         </section>
+         <div class="container__copyright">
+            <p>&copy;2023 | Desarrollado por Melisa</p>
+        </div>
+    </footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> 
+</body>
+
+</html>
