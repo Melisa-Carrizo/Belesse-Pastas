@@ -576,10 +576,46 @@ footer {
 }
 
 @media (max-width: 650px) {
+
+    /* productos */
     .section__container__ul ul {
         grid-template-columns: 1fr;
         row-gap: 3rem;
     }
+
+
 }
 
+@media (max-width: 576px) {
 
+    /* index */
+    .section__index__expansion {
+        border-left: 2.5rem solid #333;
+        border-right: 2.5rem solid #333;
+
+    }
+
+    .section__index__expansion h2 {
+        font-size: 1.4rem;
+    }
+
+    /* productos */
+    .container__titulo__naranja h3 {
+        padding: 1rem 4rem;
+    }
+    
+    /* delivery */
+    #delivery h3 {
+        padding: 0 1rem;
+    }
+
+    .container__info__delivery__mediaquery {
+        padding: 1.563rem 1rem 2.188rem 1rem;
+        border-left: 2rem solid #333;
+        border-right: 2rem solid #333;
+    }
+
+    .delivery__ul__general li {
+        padding-left: 0px;
+    }
+}
