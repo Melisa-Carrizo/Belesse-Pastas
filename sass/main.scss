@@ -1,0 +1,266 @@
+// variables
+
+$amarilloBelesse: #f5f4d4;
+$grisClaroBelesse: #333;
+$grisOscuroBelesse: #2a2a2a;
+
+@import "index";
+@import "producto";
+@import "sucursales";
+@import "delivery";
+@import "contacto";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&display=swap');
+
+
+
+//general 
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+* img {
+    width: 100%;
+    display:block;
+    height: auto;
+}
+
+//menu navegación 
+
+.header__desktop__logo__div {
+    background-color: $amarilloBelesse;
+    display: flex;
+    justify-content: center;
+
+    .header__desktop__logo {
+        width: 10%;
+    }
+}
+
+#header__navbar__color {
+    background-color: $amarilloBelesse;
+    border-top: black solid 1px;
+
+    #logo__navbar {
+        width: 150px;
+        height: 66px;
+    }
+}
+
+.header__navbar ul li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+
+        &:hover {
+            color: black;
+            text-shadow: #5555 2px 2px 2px;
+        }
+}
+
+// titulo pages
+
+.main__container {
+    display: flex;
+    padding: 3rem 0;
+    justify-content: center;
+    
+        &__h2 {
+            color: white;
+            background-color: $grisClaroBelesse;
+            width: 13rem;
+            height: 3.5rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 300;
+            padding-top: 0.7rem;
+            font-size: 1.5rem;
+            letter-spacing: 0.1rem;
+        }
+}
+
+//footer 
+ 
+footer {
+    width: 100%; 
+    background-color:#2a2a2a;
+    border-top: 0.2rem solid #363636;
+    color: white;
+    padding: 2rem 0rem;
+
+    .footer__section__info {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+        img {
+            width: 36px;
+            height: 36px;
+        }
+    
+    .container__contacto {
+        a {
+            display: flex;
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                color: rgb(223, 222, 222);
+            }
+        }
+
+        p {
+            padding: 0.4rem;
+        }
+
+        img:hover {
+            opacity: 0.5;
+        }
+    }
+    
+    .container__logo img {
+        width: 242px;
+        height: 96px;
+    }
+
+    .containerImgRedes {
+        display: flex;
+        justify-content: space-evenly;
+    
+        img:hover {
+            opacity: 0.5;
+        }
+    }
+
+    .container__copyright {
+        text-align: center;
+        padding-top: 3.5rem;
+    }
+}
+
+//media
+
+@media (max-width: 992px) {
+    /* generales */
+    .header__desktop__logo__div {
+        display: none;
+    }
+    #header__navbar__color {
+        border-top: 0px
+    }
+    .footer__section__info {
+        flex-direction: column;
+    }
+    .footer__section__info div {
+        padding-bottom: 2rem;
+    }
+
+    /* productos */
+    
+    .section__container__ul ul {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 3rem;
+    }
+
+    /* sucursales */
+
+    .container__sucursales__bg iframe {
+        margin-left: 0px;
+    }
+    .container__sucursales__bg {
+        border-left: 3rem solid $grisClaroBelesse;
+        border-right: 3rem solid $grisClaroBelesse;
+    }
+    .sucursales__grid__container__iframe__info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sucursales__info__container {
+        margin-top: 1.5rem;
+    }
+
+    /* contacto */
+    .section__contactanos {
+        border: $amarilloBelesse solid 2rem;
+        padding: 1rem;
+    }
+    .delivery__ul__general li {
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+     /* productos */
+    
+     .section__container__ul ul {
+        grid-template-columns: 1fr;
+    }
+
+    /* delivery */
+    .container__info__delivery__mediaquery {
+        padding: 1.563rem 3rem 2.188rem 3rem;
+        border-left: 4rem solid $grisClaroBelesse;
+        border-right: 4rem solid $grisClaroBelesse;
+    }
+     
+    .delivery__ul__general {
+        flex-direction: column;
+    }
+
+    .delivery__ul__general li {
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 650px) {
+
+    /* productos */
+    .section__container__ul ul {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+
+    /* index */
+    .section__index__expansion {
+        border-left: 2.5rem solid $grisClaroBelesse;
+        border-right: 2.5rem solid $grisClaroBelesse;
+
+    }
+
+    .section__index__expansion h2 {
+        font-size: 1.4rem;
+    }
+
+    /* productos */
+    .container__titulo__naranja h3 {
+        padding: 1rem 4rem;
+    }
+    
+    /* delivery */
+    #delivery h3 {
+        padding: 0 1rem;
+    }
+
+    .container__info__delivery__mediaquery {
+        padding: 1.563rem 1rem 2.188rem 1rem;
+        border-left: 2rem solid $grisClaroBelesse;
+        border-right: 2rem solid $grisClaroBelesse;
+    }
+
+    .delivery__ul__general li {
+        padding-left: 0px;
+    }
+}

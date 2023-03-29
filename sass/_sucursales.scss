@@ -1,0 +1,54 @@
+.container__sucursales__bg {
+
+    background-color: white;
+    padding:  1.563rem 1.563rem 2.188rem 1.563rem;
+    border-bottom: 3.125rem solid $grisClaroBelesse;
+    border-top: 3.125rem solid $grisClaroBelesse;
+    border-left: 5.625rem solid $grisClaroBelesse;
+    border-right: 5.625rem solid $grisClaroBelesse;
+
+        &__h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+    .sucursales__grid__container__iframe__info {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 4rem;
+        
+            .sucursales__info__container {
+                background-color: rgb(201 192 252 / 1);
+                border-radius: 10px;
+                align-content: center;
+                box-shadow:  0 0  0 2px rgb(255,255,255),
+                            0.3em 0.3em 1em rgba(0,0,0,0.3);
+            }
+        
+    }
+
+    iframe {
+        background-color: tomato;
+        padding: 0.313rem;
+        margin-left: 2.5rem;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 1.3rem 3rem;
+        letter-spacing: 0.2rem;
+        background-color: rgb(255, 255, 255);
+        border-radius: 4px; 
+    }
+
+    h5 {
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+
+}

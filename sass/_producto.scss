@@ -1,0 +1,71 @@
+.section__container__menu {
+
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 7px;
+    }
+
+    .container__titulo__naranja {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            h3 {
+                background-color: bisque;
+                padding: 1rem 6rem;
+                border-radius: 4px;
+                font-size: 1.4rem;
+                text-transform: uppercase;
+            }
+    }
+
+    .section__container__ul {
+        padding: 4.1rem 2rem;
+
+        ul {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 1rem;
+        }
+
+        li {
+            display: flex;
+
+            .principales__producto__descripción {
+                padding: 0.5rem 0 0 1rem;
+
+                    h3 {
+                        font-size: 1.3rem;
+                    }
+
+                    p {
+                        font-size: 0.9rem;
+                    }
+            }
+        } 
+    }
+
+    .section__menu__principales {
+
+        ul {
+        grid-template-rows: repeat(3,1fr);
+        row-gap: 3rem;
+        }
+    }
+
+    #salsas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 0 0 0;
+        font-weight: 600;
+        
+            p {
+                background-color: rgb(199, 199, 247);
+                padding: 1rem;
+                border-radius: 4px;
+            }
+    }
+}

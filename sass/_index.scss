@@ -1,0 +1,61 @@
+.index__main {
+    width: 100%;
+    display: block;
+}
+
+.index__container__info {
+    width: 100%;
+    background-color: white;
+    display: inline-block;
+    padding:  1.563em 1.563em 2.188em 1.563em;
+    border-bottom: 3.125em solid $grisClaroBelesse;
+    border-top: 3.125em solid $grisClaroBelesse;
+    border-left: 3.125em solid $grisClaroBelesse;
+    border-right: 3.125em solid $grisClaroBelesse;
+
+    h2 {
+        font-size: 1.9rem;
+        font-weight: 400;
+        margin-bottom: 1.25rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}
+
+#section__index__nosotros {
+    .index__hr__section__txt {
+        margin: 0px 24.375rem 1.875rem 24.375rem;
+        border-top: black solid 2px; 
+    }
+}
+
+.div__img__index__locales {
+    position: relative;
+    width: 100%;
+
+    a {
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 400;
+        color: white;
+        font-size: 4rem;
+        z-index: 2;
+        position: absolute;
+        text-shadow: $grisClaroBelesse 2px 2px 2px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+            &:hover {
+                text-decoration: underline;
+                text-shadow: $grisClaroBelesse 4px 4px 4px;  
+            }
+    }
+}
+
