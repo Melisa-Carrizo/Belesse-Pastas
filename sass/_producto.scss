@@ -48,9 +48,7 @@
     }
 
     .section__menu__principales {
-
         ul {
-        grid-template-rows: repeat(3,1fr);
         row-gap: 3rem;
         }
     }
@@ -69,3 +67,4 @@
             }
     }
 }
+

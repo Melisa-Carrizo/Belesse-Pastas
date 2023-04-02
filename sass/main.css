@@ -103,7 +103,6 @@
   font-size: 0.9rem;
 }
 .section__container__menu .section__menu__principales ul {
-  grid-template-rows: repeat(3, 1fr);
   row-gap: 3rem;
 }
 .section__container__menu #salsas {
@@ -409,9 +408,11 @@ footer .container__copyright {
     padding-bottom: 2rem;
   }
   /* productos */
-  .section__container__ul ul {
+  #section__container__ul__mediaQuery ul {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 3rem;
+  }
+  #section__container__ul__salsas__mediaQuery ul {
+    grid-template-columns: repeat(2, 1fr);
   }
   /* sucursales */
   .container__sucursales__bg iframe {
@@ -439,8 +440,11 @@ footer .container__copyright {
 }
 @media (max-width: 768px) {
   /* productos */
-  .section__container__ul ul {
-    grid-template-columns: 1fr;
+  #section__container__ul__mediaQuery ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #section__container__ul__salsas__mediaQuery ul {
+    grid-template-columns: repeat(1, 1fr);
   }
   /* delivery */
   .container__info__delivery__mediaquery {
