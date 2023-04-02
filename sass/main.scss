@@ -85,6 +85,21 @@ $grisOscuroBelesse: #2a2a2a;
         }
 }
 
+.main__container__animation {
+    animation: ease-in animation 0.5s;
+}
+
+@keyframes animation {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+
 //footer 
  
 footer {
