@@ -1,7 +1,20 @@
 .index__main {
     width: 100%;
     display: block;
+
+        h1 {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        position: absolute;
+        z-index: 2;
+        color: white;
+        font-size: 1.2rem;
+        padding-top: 6rem;
+        text-shadow: $grisClaroBelesse 1px 1px 1px;
+        }
 }
+    
 
 .index__container__info {
     width: 100%;
@@ -13,6 +26,7 @@
     border-left: 3.125em solid $grisClaroBelesse;
     border-right: 3.125em solid $grisClaroBelesse;
 
+        
     h2 {
         font-size: 1.9rem;
         font-weight: 400;
